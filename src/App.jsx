@@ -5,10 +5,20 @@ import './App.css'
 import Text from './Text' 
 
 function App() {
+
+
   const [count, setCount] = useState(0)
 
   return (
+    
     <>
+      <div
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #a18cd1, #fbc2eb)",
+        padding: "100px",
+      }}
+      >
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -17,7 +27,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Katelyn learning react</h1>
+      <h1 style={{ color: "purple", textAlign: "center" }}>
+        Katelyn learning react
+      </h1>
+       
 
 <Text/>
 
@@ -32,6 +45,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      </div>
     </>
   )
 }
